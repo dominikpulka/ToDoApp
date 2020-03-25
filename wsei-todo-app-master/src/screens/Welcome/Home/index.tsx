@@ -22,7 +22,7 @@ const Home: React.FC<IHomeProps> = (props) =>{
 
     return(
         <View>
-            <WelcomeText>To jest home screen 2</WelcomeText>
+            <WelcomeText>To jest home screen </WelcomeText>
             <CustomImage
                 source={require('../../../assets/logo.png')}
             />

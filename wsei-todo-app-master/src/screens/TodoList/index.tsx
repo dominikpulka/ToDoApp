@@ -19,12 +19,10 @@ const CustomImage = styled.Image`
 
 interface ITodoListProps { }
 
-const Home: React.FC<ITodoListProps> = (props) =>{
-    
-
+const Home: React.FC<ITodoListProps> = (props) =>{    
     return(
         <View>
-            <TodoListText>To jest home screen Todo</TodoListText>
+            <TodoListText>To jest screen Todo</TodoListText>
             <CustomImage
                 source={require('../../assets/logomin.png')}
             />

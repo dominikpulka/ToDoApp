@@ -20,8 +20,6 @@ const CustomImage = styled.Image`
 interface INotificationsProps { }
 
 const Home: React.FC<INotificationsProps> = (props) =>{
-    
-
     return(
         <View>
             <NotificationsText>To jest screen powiadomień </NotificationsText>

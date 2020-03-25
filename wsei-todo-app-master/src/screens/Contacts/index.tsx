@@ -20,8 +20,6 @@ const CustomImage = styled.Image`
 interface IContactsProps { }
 
 const Home: React.FC<IContactsProps> = (props) =>{
-    
-
     return(
         <View>
             <ContactsText>To jest screen kontaktów </ContactsText>
