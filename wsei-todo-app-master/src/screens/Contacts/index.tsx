@@ -12,8 +12,8 @@ const ContactsText = styled.Text`
 `;
 
 const CustomImage = styled.Image`
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     margin: 50px;
 `;
 
