@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 
 import Colors from '../../constans/Colors'
 
-const TodoListText = styled.Text`
+const NotificationsText = styled.Text`
     margin: 120px 20px;
     font-size: 16px;
     color: ${Colors.black};
@@ -17,16 +17,16 @@ const CustomImage = styled.Image`
     margin: 50px;
 `;
 
-interface ITodoListProps { }
+interface INotificationsProps { }
 
-const Home: React.FC<ITodoListProps> = (props) =>{
+const Home: React.FC<INotificationsProps> = (props) =>{
     
 
     return(
         <View>
-            <TodoListText>To jest home screen Todo</TodoListText>
+            <NotificationsText>To jest screen powiadomień </NotificationsText>
             <CustomImage
-                source={require('../../assets/logomin.png')}
+                source={require('../../assets/fota.png')}
             />
         </View>
     )

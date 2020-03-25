@@ -4,10 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import {createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons }  from 'react-native-vector-icons';
 
-//import Home from '../screens/Welcome';
+
 import TodoList from '../screens/TodoList';
 import Welcome from '../screens/Welcome/Home';
-
+import Notifications from  '../screens/Notifications';
+import Contacts from '../screens/Contacts';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,6 +37,26 @@ function BottomTabs(){
                     tabBarLabel: 'TodoList',
                     tabBarIcon: ({color, size}) => (
                         <MaterialCommunityIcons name = "TodoList" color={color} size = {size} />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name = "Contacts"
+                component = {Contacts}
+                options = {{
+                    tabBarLabel: 'Contacts',
+                    tabBarIcon: ({color, size}) => (
+                        <MaterialCommunityIcons name = "contacts" color={color} size={size} />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name = "Notifications"
+                component = {Notifications}
+                options = {{
+                    tabBarLabel: 'Notifications',
+                    tabBarIcon: ({color, size}) => (
+                        <MaterialCommunityIcons name = "bell" color={color} size={size} />
                     ),
                 }}
             />

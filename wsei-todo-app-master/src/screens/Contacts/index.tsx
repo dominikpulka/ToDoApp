@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 
 import Colors from '../../constans/Colors'
 
-const TodoListText = styled.Text`
+const ContactsText = styled.Text`
     margin: 120px 20px;
     font-size: 16px;
     color: ${Colors.black};
@@ -17,16 +17,16 @@ const CustomImage = styled.Image`
     margin: 50px;
 `;
 
-interface ITodoListProps { }
+interface IContactsProps { }
 
-const Home: React.FC<ITodoListProps> = (props) =>{
+const Home: React.FC<IContactsProps> = (props) =>{
     
 
     return(
         <View>
-            <TodoListText>To jest home screen Todo</TodoListText>
+            <ContactsText>To jest screen kontaktów </ContactsText>
             <CustomImage
-                source={require('../../assets/logomin.png')}
+                source={require('../../assets/fota1.png')}
             />
         </View>
     )
