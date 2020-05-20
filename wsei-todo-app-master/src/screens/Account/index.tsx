@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 
 import Colors from '../../constans/Colors'
 
-const NotificationsText = styled.Text`
+const ContactsText = styled.Text`
     margin: 120px 20px;
     font-size: 16px;
     color: ${Colors.black};
@@ -17,12 +17,12 @@ const CustomImage = styled.Image`
     margin: 50px;
 `;
 
-interface INotificationsProps { }
+interface IContactsProps { }
 
-const Home: React.FC<INotificationsProps> = (props) =>{
+const Home: React.FC<IContactsProps> = (props) =>{
     return(
         <View>
-            <NotificationsText>To jest screen powiadomień </NotificationsText>
+            <ContactsText>Treść soon :D</ContactsText>
             <CustomImage
                 source={require('../../assets/fota.png')}
             />

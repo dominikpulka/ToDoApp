@@ -1,33 +1,25 @@
-import * as React from 'react';
 import {Image, Text, View} from 'react-native';
 import styled from 'styled-components/native';
-
+import React, {FC, useState } from 'react';
 
 import Colors from '../../constans/Colors'
 
-const TodoListText = styled.Text`
-    margin: 120px 20px;
-    font-size: 16px;
-    color: ${Colors.black};
-`;
+import Form from '../../components/Form';
+import TodoList from '../../components/TodoList';
 
-const CustomImage = styled.Image`
-    width: 50px;
-    height: 50px;
-    margin: 50px;
-`;
 
-interface ITodoListProps { }
+const TodoListScreen = ({navigation}) => { 
+    const [formView, setFormView] = useState<boolean>(false);
 
-const Home: React.FC<ITodoListProps> = (props) =>{    
     return(
         <View>
-            <TodoListText>To jest screen Todo</TodoListText>
-            <CustomImage
-                source={require('../../assets/logomin.png')}
-            />
+            {formView ? (
+                <Form switchView={setFormView} />
+            ) : (
+                <TodoList switchView={setFormView}/>
+            )}
         </View>
-    )
-}
+    );
+};
 
-export default Home;
+export default TodoListScreen;
