@@ -46,5 +46,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Remove Notifications, Contacts
 
 ### Added
-
+    - StyledComponents in components
     - Account page file
+    
+## [1.2.0] - 2020-05-27
+
+### Changes
+
+    - Account structure 
+    - Home structure 
+
+### Added
+
+    - New logo

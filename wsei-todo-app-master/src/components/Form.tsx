@@ -16,6 +16,18 @@ const CustomText = styled.TextInput`
     color: black;
     width: 100%;
 `;
+const BorderButton = styled.Button`
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+`
 
 type setNewElTodoList = ReturnType<typeof setNewElTodoList>;
 
@@ -44,7 +56,7 @@ const Form: FC<{switchView(formView: boolean)}> = props =>{
         <Wrapper>
             <CustomText value={nameInput} onChange={nameValueChange} placeholder="Name"/>
             <CustomText value={descInput} onChange={descValueChange} placeholder="Description"/>
-            <Button title="Zapisz" onPress={save} />
+            <BorderButton title="Zapisz" onPress={save} />
         </Wrapper>
     )
 }

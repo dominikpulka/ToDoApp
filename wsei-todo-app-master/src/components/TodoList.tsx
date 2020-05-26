@@ -4,11 +4,12 @@ import { useSelector } from 'react-redux';
 import { Text, Button } from 'react-native';
 import { IState } from '../reducers';
 import { ITodoListReducer } from '../reducers/todolistReducer';
-
 import { ISingleElList } from '../entitles/todoSingleEl';
+import Layout from '../constans/Layout';
 
 const Wrapper = styled.View`
-    margin: 80px 20px 0 20px;
+    margin: 20px 20px 0 20px;
+    padding-top: ${Layout.statusBar + 10}px;
 `;
 const SingelElementList = styled.View`
     border: 1px solid black;
