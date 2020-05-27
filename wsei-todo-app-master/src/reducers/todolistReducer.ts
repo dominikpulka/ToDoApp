@@ -8,10 +8,6 @@ const defaultState = (): ITodoListReducer=> ({
     todoList: [{
         name: 'Pierwszy',
         description: 'Pierwszy description'
-    },
-    {
-        name: 'Drugi',
-        description: 'Drugi description'
     }]
 });
 

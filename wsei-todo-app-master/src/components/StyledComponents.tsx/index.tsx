@@ -28,3 +28,6 @@ export const AccountLogoMid = styled.Image`
     height: 100px;
     margin: 0 auto;
 `
+export const TodoView = styled.ScrollView`
+    background: #A9A9A9;
+`

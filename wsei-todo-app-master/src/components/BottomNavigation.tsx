@@ -36,7 +36,7 @@ function BottomTabs(){
                 options={{
                     tabBarLabel: 'TodoList',
                     tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name = "plus-circle" color={color} size = {size} />
+                        <MaterialCommunityIcons name = "calendar-plus" color={color} size = {size} />
                     ),
                 }}
             />

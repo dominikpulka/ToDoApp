@@ -2,6 +2,7 @@ import {Image, Text, View} from 'react-native';
 import styled from 'styled-components/native';
 import React, {FC, useState } from 'react';
 
+import { TodoView } from '../../components/StyledComponents.tsx';
 import Colors from '../../constans/Colors'
 
 import Form from '../../components/Form';
@@ -12,13 +13,13 @@ const TodoListScreen = ({navigation}) => {
     const [formView, setFormView] = useState<boolean>(false);
 
     return(
-        <View>
+        <TodoView>
             {formView ? (
                 <Form switchView={setFormView} />
             ) : (
                 <TodoList switchView={setFormView}/>
             )}
-        </View>
+        </TodoView>
     );
 };
 

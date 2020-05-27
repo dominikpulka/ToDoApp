@@ -12,21 +12,31 @@ const Wrapper = styled.View`
 
 const CustomText = styled.TextInput`
     border: 1px solid;
-    padding: 10px;
+    padding: 20px;
     color: black;
     width: 100%;
-`;
-const BorderButton = styled.Button`
-    padding: 15px 25px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    font-size: 18px;
     text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+`;
+const BorderButton = styled.TouchableHighlight`
+    margin: 10px auto 0 auto;
+    padding: 0;
+    background: #B22222;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+`
+const TextButton = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-top: -2px;
 `
 
 type setNewElTodoList = ReturnType<typeof setNewElTodoList>;
@@ -54,9 +64,11 @@ const Form: FC<{switchView(formView: boolean)}> = props =>{
 
     return(
         <Wrapper>
-            <CustomText value={nameInput} onChange={nameValueChange} placeholder="Name"/>
-            <CustomText value={descInput} onChange={descValueChange} placeholder="Description"/>
-            <BorderButton title="Zapisz" onPress={save} />
+            <CustomText value={nameInput} onChange={nameValueChange} placeholder="Name" placeholderTextColor = "#00008B"/>
+            <CustomText value={descInput} onChange={descValueChange} placeholder="Description" placeholderTextColor = "#00008B"/>
+            <BorderButton onPress={save}> 
+            <TextButton>Add</TextButton>
+            </BorderButton>
         </Wrapper>
     )
 }

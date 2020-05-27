@@ -58,4 +58,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-    - New logo
+    - New splash
+
+## [1.2.1] - 2020-05-27
+
+### Changes
+
+    - Todo structure
+
+### Added
+
+    - New Button   
